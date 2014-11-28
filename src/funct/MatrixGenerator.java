@@ -12,7 +12,7 @@ public class MatrixGenerator {
 			
 			for(int column=row; column<dimension; column++){
 				
-				int value = (row==column)? Integer.MAX_VALUE : (int) (Math.random() * (100-1));
+				int value = (row==column) ? 0 : (int) (Math.random() * (100-1));
 				
 				matrix[row][column] = value;
 				matrix[column][row] = value;
